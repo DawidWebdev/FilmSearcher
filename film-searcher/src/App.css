@@ -1,0 +1,74 @@
+body{
+  background-color: #141414;
+}
+
+header
+{
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title
+{
+  color: rgb(207, 25, 25);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.header-input
+{
+  background-color: #191919;
+  border: none;
+  outline: none;
+  color: rgb(185, 185, 185);
+  padding: .5rem;
+}
+
+.movies-list
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie 
+{
+  position: relative;
+  margin-bottom: 3rem;
+  width: 300px;
+  height: 420px;
+}
+
+.movie-image
+{
+  width: 300px;
+  height: 420px;
+}
+
+.movie-info
+{
+  background-color: rgb(33, 32, 32);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+.movie-title
+{
+  color: rgb(185, 185, 185);
+  font-weight: 700;
+}
+
+.movie-year
+{
+  color: rgb(207, 25, 25);
+  font-weight: 700;
+  background-color: rgb(40, 40, 40);
+  padding: .2rem .4rem;
+}

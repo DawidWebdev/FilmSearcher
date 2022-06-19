@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 body{
   background-color: #141414;
+  font-family: 'Poppins', sans-serif;
 }
 
 header
 {
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,6 +26,12 @@ header
   outline: none;
   color: rgb(185, 185, 185);
   padding: .5rem;
+  width: 10rem;
+}
+
+.header-input::placeholder
+{
+  font-size: 12px;
 }
 
 .movies-list
@@ -39,12 +47,27 @@ header
   margin-bottom: 3rem;
   width: 300px;
   height: 420px;
+  margin: 1rem;
+  transition: all .4s ease;
+}
+
+.movie:hover
+{
+  width: 310px;
+  height: 430px;
+}
+
+.movie:hover img
+{
+  width: 310px;
+  height: 430px;
 }
 
 .movie-image
 {
   width: 300px;
   height: 420px;
+  transition: all .4s ease;
 }
 
 .movie-info
@@ -68,7 +91,45 @@ header
 .movie-year
 {
   color: rgb(207, 25, 25);
-  font-weight: 700;
+  font-weight: 500;
   background-color: rgb(40, 40, 40);
   padding: .2rem .4rem;
+}
+
+::-webkit-scrollbar
+{
+  width: .75rem;
+}
+
+::-webkit-scrollbar-track
+{
+  background-color: #141414;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgb(40, 40, 40);
+  border-radius: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header-title
+  {
+    font-size: 25px;
+  }
+
+  .header-input
+  {
+    background-color: #191919;
+    border: none;
+    outline: none;
+    color: rgb(185, 185, 185);
+    padding: .5rem;
+    width: 15rem;
+  }
+
+  .header-input::placeholder
+  {
+    font-size: 14px;
+  }
 }

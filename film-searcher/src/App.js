@@ -31,13 +31,15 @@ const App = () => {
       </header>
       
       <main>
-          <div className='movies-list'>
-            {movies.map((movie) =>{
-              return(
-                <Movie movie={movie} movieImage={movie.Poster} movieTitle={movie.Title} movieYear={movie.Year.substr(0, 4)}/>
-              )
-            })}
-          </div>
+          <section>
+            <div className='movies-list'>
+              {movies.map((movie) =>{
+                return(
+                  <Movie movie={movie} movieImage={movie.Poster} movieTitle={movie.Title} movieYear={movie.Year.substr(0, 4)}/>
+                )
+              })}
+            </div>
+          </section>
       </main>
     </>
   );
